@@ -91,7 +91,7 @@ a {
 }
 
 @media (min-width: 768px) {
-  .contenedor-app {
+  .container-app {
     display: flex;
     min-height: 100vh;
   }
@@ -100,7 +100,7 @@ a {
     background-color: var(--blanco);
     flex: 0 0 300px;
   }
-  .seccion-principal {
+  .section-primary {
     flex: 1;
   }
 }
@@ -110,24 +110,24 @@ aside {
   padding: 3rem;
 }
 
-.formulario-nuevo-proyecto {
+.form-new-proyect {
   margin-top: 6rem;
 }
-.formulario-nuevo-proyecto .input-text {
+.form-new-proyect .input-text {
   border-bottom: 1px solid var(--gris2);
   border-radius: 0;
   background-color: var(--gris1);
 }
-.formulario-nuevo-proyecto .input-text::placeholder {
+.form-new-proyect .input-text::placeholder {
   color: var(--gris2);
 }
-.proyectos {
+.proyects {
   margin-top: 10rem;
 }
-.listado-proyectos li {
+.list-proyects li {
   margin-bottom: 2rem;
 }
-.listado-proyectos li a {
+.list-proyects li a {
   font-size: 1.4rem;
   color: var(--gris2);
   line-height: 1.5;
@@ -147,11 +147,11 @@ aside {
 .name-user span {
   font-weight: 900;
 }
-.nav-principal a {
+.nav-primary a {
   color: var(--blanco);
   text-decoration: none;
 }
-.nav-principal a:first-of-type {
+.nav-primary a:first-of-type {
   margin-right: 2rem;
 }
 
@@ -180,7 +180,7 @@ aside {
 }
 
 /** TAREAS LISTADO **/
-.contenedor-tareas {
+.container-task {
   padding: 4rem;
 }
 
