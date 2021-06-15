@@ -10,8 +10,8 @@ const List = () => {
 
   return (
     <ul className="list-proyects">
-      {data.map((d) => (
-        <Proyect proyect={d} />
+      {data.map((d, i) => (
+        <Proyect proyect={d} key={i} />
       ))}
     </ul>
   );

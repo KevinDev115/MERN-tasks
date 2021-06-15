@@ -19,7 +19,7 @@ const TaskList = () => {
             <p>No tasks...</p>
           </li>
         ) : (
-          tasks.map((task) => <Task task={task} />)
+          tasks.map((task, index) => <Task task={task} key={index} />)
         )}
       </ul>
     </>
