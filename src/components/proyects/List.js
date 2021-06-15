@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import proyectContext from "../../context/proyects/context";
 import Proyect from "./Proyect";
 
 const List = () => {
-  const data = [
-    { name: "Proyect 1" },
-    { name: "Proyect 2" },
-    { name: "Proyect 3" },
-  ];
+  const { proyects, setProyects } = useContext(proyectContext);
+
+  useEffect(() => {
+    setProyects();
+  }, []);
 
   return (
     <ul className="list-proyects">
-      {data.map((d, i) => (
+      {proyects.map((d, i) => (
         <Proyect proyect={d} key={i} />
       ))}
     </ul>

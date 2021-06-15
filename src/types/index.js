@@ -1,0 +1,2 @@
+export const SHOW_PROYECT_FORM = "SHOW_PROYECT_FORM";
+export const SET_PROYECTS = "SET_PROYECTS";

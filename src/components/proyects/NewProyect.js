@@ -2,9 +2,7 @@ import React, { useContext, useState } from "react";
 import proyectContext from "../../context/proyects/context";
 
 const NewProyect = () => {
-  const { newProyect } = useContext(proyectContext);
-
-  console.log(newProyect);
+  const { newProyect, showProyectForm } = useContext(proyectContext);
 
   const [proyect, setProyect] = useState({ name: "" });
 
@@ -23,7 +21,11 @@ const NewProyect = () => {
 
   return (
     <>
-      <button type="button" className="btn btn-block btn-primary">
+      <button
+        type="button"
+        className="btn btn-block btn-primary"
+        onClick={showProyectForm}
+      >
         New Proyect
       </button>
       {newProyect && (
